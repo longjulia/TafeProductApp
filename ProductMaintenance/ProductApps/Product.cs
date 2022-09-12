@@ -33,7 +33,6 @@ namespace ProductApps
             set { totalPayment = value; }
         }
 
-
         private decimal Delivery
         {
             get { return delivery; }
@@ -60,10 +59,12 @@ namespace ProductApps
             Quantity = quantity;
         }
 
+
         //Calculate the total payment
         public void calTotalPayment()
         {
             TotalPayment = Price * Quantity;
         }
+
     }
 }
